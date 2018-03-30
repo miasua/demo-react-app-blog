@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Spinner } from '@blueprintjs/core';
 import { NavLink } from 'react-router-dom';
+import { Spinner } from '@blueprintjs/core';
 
 import { requestComments, clearComments } from 'redux/modules/post';
 
