@@ -1,16 +1,21 @@
 import { fork, put } from 'redux-saga/effects';
 
 import { usersRequestSaga, requestUsers } from 'redux/modules/users';
-import { postsRequestSaga } from 'redux/modules/posts';
+import { postsRequestSaga, requestPosts } from 'redux/modules/posts';
+import { commentsRequestSaga } from 'redux/modules/post'
 
 export function* routeSagas() {
-  // posts
-  yield fork(postsRequestSaga);
+  // Post
+  yield fork(commentsRequestSaga);
 }
 
 export function* startup() {
+  // fetch users
   yield fork(usersRequestSaga);
   yield put(requestUsers());
+  // fetch posts
+  yield fork(postsRequestSaga);
+  yield put(requestPosts());
 }
 
 export default function* root() {

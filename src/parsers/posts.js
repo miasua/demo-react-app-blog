@@ -7,9 +7,9 @@ export const parsePosts = (data) => {
     const postRecord = new PostRecord({
       id,
       authorId: userId,
-      link: `#/posts/${id}`,
+      link: `/posts/${id}`,
       title,
-      desc: body
+      body
     });
 
     posts.push(postRecord);

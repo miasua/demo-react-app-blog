@@ -5,7 +5,7 @@ const PostRecord = Record({
   authorId: null,
   title: null,
   link: null,
-  desc: null
+  body: null
 });
 
 export default PostRecord;

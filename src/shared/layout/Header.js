@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
   props: {
@@ -10,9 +11,9 @@ class Header extends Component {
     const title = this.props.title || 'Blog';
 
     return (
-      <nav className=' pt-navbar pt-dark'>
+      <nav className='pt-navbar pt-dark'>
         <div className='pt-navbar-group pt-align-left'>
-          <div className='pt-navbar-heading'>{title}</div>
+          <div className='pt-navbar-heading'><NavLink to='/'>{title}</NavLink></div>
         </div>
       </nav>
     );
