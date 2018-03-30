@@ -1,0 +1,13 @@
+.posts {
+  padding: 30px;
+
+  :global {
+    .pt-card {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.loader {
+  text-align: center;
+}

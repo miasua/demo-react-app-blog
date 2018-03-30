@@ -1,0 +1,25 @@
+{
+    "presets": [
+        ["es2015", {"modules": false}],
+        "react",
+        "stage-3"
+    ],
+    "plugins": [
+        "syntax-dynamic-import",
+        "transform-runtime",
+        "transform-class-properties"
+    ],
+    "env": {
+        "production": {
+
+        },
+        "development": {
+            "plugins": [
+                "react-hot-loader/babel"
+            ],
+            "presets": [
+                "react-hmre",
+            ],
+        }
+    }
+}
