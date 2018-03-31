@@ -43,8 +43,6 @@ You can deploy to S3 from the command line:
 
 ## Dependencies
 
-react-app-scaffolding uses the following libraries and dependencies:
-
 - [Yarn](https://yarnpkg.com/en/)
 - [React](https://facebook.github.io/react/docs/hello-world.html)
 - [React Router 4](https://reacttraining.com/react-router/web/guides/quick-start)
